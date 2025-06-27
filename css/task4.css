@@ -1,0 +1,306 @@
+.header section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang{
+    display: flex;
+}
+
+.header{
+    padding: 20px 20px 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger-menu{
+    background: none;
+    display: none;
+    border: none;
+}
+.header-logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: blue;
+}
+.header-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-decoration: none;
+   
+}
+.header-menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+button{
+    text-transform: uppercase;
+    background: blue;
+    color: white;
+    border: 0;
+    padding: 5px 60px;
+    width: max-content;
+    font-weight: 500;
+}
+span{
+    font-weight: 500;
+}
+
+main{
+    flex: auto;
+}
+footer{
+    background: rgb(4, 96, 143);
+}
+footer h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.description{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    font-family: cambria;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    text-decoration: none;
+}
+
+.description h3{
+    font-weight: 600;
+    font-size: 20px;
+    height: 30px;
+}
+.description a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    color: white;
+}
+.info{
+    padding: 20px 60px;
+}
+.info p{
+    color: rgba(224, 224, 223, 0.434);
+}
+.hero{
+    height: 981px;
+    background: url(../images/hero.png);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+.hero-choose{
+    padding: 24px 20px;
+    width: 235px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-choose h4{
+    line-height: 160%;
+}
+.hero-choose select{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero button{
+    height: 100px;
+    padding: 20px 24px;
+     text-transform: uppercase;
+    background: blue;
+    color: white;
+    border: none;
+
+}
+
+.hero-choose:nth-child(1){
+    background: #7b7b7b;
+}
+.hero-choose:nth-child(2){
+    background: #504f4f;
+}
+.hero-choose:nth-child(3){
+    background: #303030;
+}
+
+.about-us div{
+    display: flex;
+    
+    
+}
+.abo{
+    margin: 100px auto;
+    max-width: 1080px;
+    padding: 0px 30px;
+    line-height: 150%;
+    text-align: center;
+
+}
+.abo p{
+    margin: 30px 0px;
+}
+h2{
+    font-size: 64px;
+    color: #888;
+    font-family: Cambria, serif;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+
+.our-events{
+    text-align: center;
+    padding: 30px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: 20px auto;
+    gap: 20px;
+}
+.card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.card-body{
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+}
+.card-body h4{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: none;
+}
+.card{
+    position: relative;
+}
+.card-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-style: 20px;
+}
+.card-date-day{
+    font-size: 40px;
+
+}
+.contact-us{
+    max-width: 940px;
+    margin: 100px auto;
+    padding: 30px;
+
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.contact-form-fields{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.contact-form-fields input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    outline: none;
+} 
+
+.contact-form textarea{
+    resize: none;
+    height: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+.contact-form button{
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+.burger-menu { 
+    display: block; 
+    padding: 5px 10px 5px 10px;
+ }
+.header nav { display: none; }
+.info { display: none;}
+.description-links { display: none;}
+.header-logo { text-align: center;}
+.hero{
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.hero button, .hero-choose{
+    width: max(70%, 300px);
+}
+.cards{
+grid-template-columns: repeat(1, 1fr);
+}
+.card img{
+    height: 60vw;
+}
+.contact-form-fields{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+.contact-form{
+    gap: 30px;
+}
+}
+
+@media screen and (max-width: 450px){
+    h2{
+        font-size: 20px;
+    }
+    .abo p{
+        font-size: 14px;
+        margin: 14px 0px;
+        color: #303030;
+    }
+    .card-date{
+        width: 70px;
+        height: 70px;
+        font-size: 16px;
+    }
+    .card-date-day{
+        font-size: 20px;
+    }
+}
